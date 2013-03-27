@@ -33,6 +33,6 @@ class Autoloader
         if ($classPath = stream_resolve_include_path($class)) 
             return include_once $classPath;
         
-        throw new Exception("Arquivo {$class} não encontrado");
+        throw new \Exception("Arquivo {$class} não encontrado");
     }
 }
